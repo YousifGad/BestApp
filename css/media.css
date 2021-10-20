@@ -8,8 +8,8 @@
         padding-top: 30px;
     }
 
-    .features .box-container .box {
-        margin: 20px 0;
+    .features .box-container .box:nth-of-type(3) {
+        margin-top: 30px;
     }
 
     .review .box .fa-quote-right {
@@ -96,6 +96,15 @@
 
     .about .content {
         text-align: center;
+    }
+
+    .features .box-container{
+        flex-flow: column;
+    }
+    
+    .features .box-container .box {
+        width: 90%;
+        margin-bottom: 30px;
     }
 
     .review .box-container {

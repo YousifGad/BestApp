@@ -12,6 +12,10 @@
         margin: 20px 0;
     }
 
+    .review .box .fa-quote-right {
+        font-size: 80px;
+    }
+
 }
 
 @media (max-width:991px){
@@ -22,14 +26,14 @@
         padding-bottom: 35px;
     }
 
-    .features .heading {
+    .heading {
         padding: 10px;
     }
 
-    .about .heading {
-        padding: 10px;
+    .review .box .fa-quote-right {
+        right: 15px;
+        font-size: 65px;
     }
-    
 }
 
 @media (max-width:768px){
@@ -93,12 +97,89 @@
     .about .content {
         text-align: center;
     }
+
+    .review .box-container {
+        flex-flow: column;
+    }
+
+    .review .box {
+        margin: 0 2%;
+        margin-bottom: 20px;
+    }
+
+    .review .box .fa-quote-right {
+        right: 20px;
+        font-size: 70px;
+    }
+
+    .pricing .box-container {
+        flex-flow: column;
+    }
+
+    .pricing .box-container .box {
+        margin: 0;
+        margin-bottom: 25px;
+        width: 80%;
+    }
+
+    .contact {
+        flex-flow: column-reverse;
+    }
+
+    .contact .content {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .contact .image {
+        width: 80%;
+    }
+
+    footer .content {
+        flex-flow: column;
+        padding-top: 60px;
+    }
+
+    footer .col-1 {
+        padding-top: 30px;
+    }
+
 }
 
-@media (max-width:450px){
+
+
+@media (max-width:450px) {
     
     html{
         font-size: 50%;
+    }
+
+    .review .box {
+        margin: 0 1%;
+        margin-bottom: 20px;
+    }
+
+    .review .box .fa-quote-right {
+        right: 15px;
+        font-size: 60px;
+    }
+
+    .contact .content {
+        width: 98%;
+        margin-bottom: 40px;
+    }
+
+    .contact .content form input.btn{
+        width: 100%;
+        padding: 10px 30px;
+    }
+
+    .contact .image {
+        width: 100%;
+    }
+
+    footer .col-1 {
+        padding-top: 40px;
     }
 
 }

@@ -53,6 +53,7 @@ body {
     font-size: 35px;
     color: var(--purple);
     text-align: center;
+    padding-top: 80px;
     padding-bottom: 10px;
 }
 
@@ -160,10 +161,6 @@ header label{
 
 
 /* Features */
-.features h1 {
-    padding-top: 80px;
-}
-
 .features .box-container{
     display: flex;
     align-items: center;
@@ -209,10 +206,6 @@ header label{
 
 
 /* About */
-.about .heading {
-    padding-top: 80px;
-}
-
 .about .row {
     display: flex;
     align-items: center;
@@ -247,4 +240,240 @@ header label{
 
 .about .row .content .btn:first-of-type {
     margin-right: 20px;
+}
+
+
+
+
+/* Review */
+.review .box-container {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.review .box{
+    flex: 1;
+    text-align: center;
+    padding: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-left: 20px;
+}
+
+.review  .box img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.review .box .fa-quote-right {
+    position: absolute;
+    color: var(--pink);
+    font-size: 100px;
+    top: 0; right: 20px;
+    opacity: 0.3;
+}
+
+.review .box h3 {
+    padding: 5px 0;
+    font-size: 20px;
+    color: var(--pink);
+}
+
+.review .box .stars i {
+    color: var(--purple);
+    font-size: 15px;
+}
+
+.review .box p {
+    font-size: 14px;
+    color: #666;
+    padding-top: 10px;
+}
+
+
+
+
+/* Pricing */
+.pricing .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.pricing .box-container .box {
+    flex: 1;
+    padding: 25px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-left: 25px;
+    transition: border 0s;
+}
+
+.pricing .box-container .box:nth-last-of-type(2),
+.pricing .box-container .box:hover {
+    border: 2px solid var(--pink);
+}
+
+.pricing .box-container .box h3 {
+    color: var(--purple);
+    font-size: 25px;
+}
+
+.pricing .box-container .box h1 {
+    color: var(--pink);
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+.pricing .box-container .box h1 span {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.pricing .box-container .box ul {
+    padding: 10px 0;
+}
+
+.pricing .box-container .box ul li {
+    font-size: 17px;
+    color: #666;
+    padding: 5px 0;
+}
+
+.pricing .box-container .box ul li .fa-check {
+    color: lightgreen;
+    font-size: 20px;
+}
+
+.pricing .box-container .box ul li .fa-times {
+    color: tomato;
+    font-size: 20px;
+}
+
+
+
+
+/* Contact */
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .image {
+    flex: 1;
+}
+
+.contact .image img {
+    width: 98%;
+}
+
+.contact .content {
+    flex: 1;
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 70px;
+}
+
+.contact .content .heading {
+    padding-top: 0;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contact .content form input{
+    display: block;
+    width: 100%;
+    background: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+    margin-top: 5px;
+    padding: 3px 8px;
+    text-transform: none;
+}
+
+.contact .content form label {
+    font-size: 17px;
+    color: #666;
+}
+
+.contact .content form input.btn {
+    width: 40%;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    background-color: #F83163;
+    padding: 10px 30px;
+}
+
+
+
+
+/* Footer */
+footer {
+    padding: 40px 2%;
+    margin-top: 80px;
+    background-image: url(../images/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+footer .col {
+    flex: 1;
+}
+
+footer .col h1 {
+    font-size: 25px;
+    color: #fff;
+    padding: 10px 0;
+}
+
+footer .col p {
+    font-size: 15px;
+    color: #eee;
+    padding: 5px 0;
+}
+
+footer .col a {
+    display: block;
+    font-size: 15px;
+    color: #eee;
+    padding: 5px 0;
+}
+
+footer .col p i {
+    margin-right: 5px;
+    font-size: 17px;
+}
+
+footer .col a:hover {
+    color: var(--pink);
+}
+
+footer .owner {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    border-top: 2px solid #fff;
+    margin-top: 40px;
+    padding-top: 25px;
 }
